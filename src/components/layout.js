@@ -1,5 +1,6 @@
 import * as React from 'react'
 import * as css from './layout.module.css'
+import githubLogo from '../images/github.png'
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -7,14 +8,18 @@ const Layout = ({ pageTitle, children }) => {
 
     <div>
       <div className={css.Header}>
-        <div className={css.LogoGroup}>
+        <div className={css.HeaderGroup}>
+          <a href="/" className={css.LogoGroup}>
+            <img src={githubLogo} alt="" width="40px" />
+            <span className={css.LogoText}>GitHub</span>
+          </a>
         </div>
       </div>
       <body>
         <div className={css.container}>
           <title>{pageTitle}</title>
           <main>
-            <h1 className={css.gradient}>{pageTitle}</h1>
+            <h1 className={css.gradient}>{pageTitle} <br/><text></text></h1>
             {children}
           </main>
         </div>

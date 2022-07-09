@@ -1,4 +1,4 @@
-body {
+body, div{
     margin: 0;
     padding: 0;
     background: white;
@@ -13,11 +13,12 @@ body {
 }
 
 .gradient {
-    background: linear-gradient(286deg, #f63333, #dded00);
+    background: linear-gradient(286deg, #f63333,  #ffd000);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 .container {
     max-width: 700px;
@@ -25,10 +26,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    padding: 20px 0;
+    padding: 0 0;
 }
 
-.container h1, p{
+.container h1, h2,h3, h4, h5, p{
     opacity: 0;
     -webkit-animation: StartUpAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
     animation: StartUpAnimation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -69,29 +70,49 @@ body {
 .Header {
     box-sizing: border-box;
     width: 100%;
-    padding: 40px 5% 0;
+    padding: 2.5% 0 0 2.5%;
 }
 
 .HeaderGroup {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1;
     grid-gap: 10px;
-    -webkit-align-items: left;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
-    max-width: 1000px;
-}
-
-.Header .LogoGroup {
-    display: grid;
-    grid-template-columns: 0 0;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    grid-gap: 0px;
-    justify-self: start;
+    max-width: 85%;
 }
 
+
+.Header .LogoGroup {
+    display: grid;
+    grid-template-columns: auto auto;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 7.5px;
+    justify-self: end;
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+}
+
+.Header .LogoGroup:hover {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+
+.Header .LogoGroup .LogoText {
+    font-size: 18px;
+    font-weight: 600;
+    -webkit-letter-spacing: -0.78px;
+    -moz-letter-spacing: -0.78px;
+    -ms-letter-spacing: -0.78px;
+    letter-spacing: -0.78px;
+}
