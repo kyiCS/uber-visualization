@@ -12,6 +12,13 @@ body {
     transition: 0.4s cubic-bezier(0.3, 0.8, 0.2, 1);
 }
 
+.gradient {
+    background: linear-gradient(286deg, #f63333, #dded00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .container {
     max-width: 700px;
     margin: 0 auto;

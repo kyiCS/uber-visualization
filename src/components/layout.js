@@ -14,7 +14,7 @@ const Layout = ({ pageTitle, children }) => {
         <div className={css.container}>
           <title>{pageTitle}</title>
           <main>
-            <h1>{pageTitle}</h1>
+            <h1 className={css.gradient}>{pageTitle}</h1>
             {children}
           </main>
         </div>

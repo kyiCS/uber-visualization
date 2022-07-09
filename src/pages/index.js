@@ -10,10 +10,11 @@ const IndexPage = () => {
       <p>
         This webpage will walk you through the process.
         
-        <img src={githubLogo} alt="" width="100" length="100"/>
+        
 
       </p>
-      <div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>w</div>
+      <div>      <img src={githubLogo} alt="" width="100" length="100"/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>w</div>
     </Layout>
   )
 }
