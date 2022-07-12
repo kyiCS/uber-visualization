@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_95e78277e1dc1d7fbbca6072c422bf8d {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_95e78277e1dc1d7fbbca6072c422bf8d" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_95e78277e1dc1d7fbbca6072c422bf8d = L.map(
+        'map_95e78277e1dc1d7fbbca6072c422bf8d', {
+        center: [33.378005, -86.80478550000001],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_a0af5268319bbcdda32ac01aca7f07e7 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_95e78277e1dc1d7fbbca6072c422bf8d);
+    
+                var poly_line_5fdb66ec12b135139df7718d767d98b7 = L.polyline(
+                    [[33.37647069892325, -86.80206774341325], [33.377850501553596, -86.80227587408142], [33.37812531023006, -86.80230806071805], [33.37783258802453, -86.80268357447312], [33.37723231763485, -86.80328438570145], [33.37546731715218, -86.80750081713367], [33.376363260997884, -86.80757591629141], [33.37677539071735, -86.80669615121792], [33.3790331163742, -86.80625627317274], [33.37997381372314, -86.80674979860669], [33.37997381372314, -86.80674979860669]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 0.8,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_95e78277e1dc1d7fbbca6072c422bf8d);
+            
+    
+                var poly_line_97c03f832edc4f629f1572e8625ac7d2 = L.polyline(
+                    [[33.376055, -86.802784], [33.376075, -86.802796], [33.376448, -86.803013], [33.377183, -86.803439], [33.377196, -86.803287], [33.377359, -86.803025], [33.377403, -86.802957], [33.377603, -86.802629], [33.377667, -86.80254], [33.377727, -86.802457], [33.377873, -86.802246], [33.378065, -86.801976], [33.378181, -86.80194], [33.378574, -86.801265], [33.378181, -86.80194], [33.378136, -86.802079], [33.377992, -86.802311], [33.377858, -86.802527], [33.377794, -86.802615], [33.37771, -86.802721], [33.377515, -86.803013], [33.377473, -86.803082], [33.377309, -86.803345], [33.377183, -86.803439], [33.377078, -86.803603], [33.376827, -86.804078], [33.376792, -86.804143], [33.37661, -86.804487], [33.376416, -86.804852], [33.376376, -86.804934], [33.376271, -86.805189], [33.376176, -86.805434], [33.376087, -86.805662], [33.375999, -86.805888], [33.375965, -86.805982], [33.375674, -86.806806], [33.375606, -86.806998], [33.375473, -86.807373], [33.37539, -86.807586], [33.375511, -86.807572], [33.375622, -86.807641], [33.375743, -86.807684], [33.375915, -86.807658], [33.376043, -86.80761], [33.376094, -86.807601], [33.376148, -86.807598], [33.376249, -86.807614], [33.376348, -86.807651], [33.376404, -86.807682], [33.376434, -86.807598], [33.376556, -86.80726], [33.376667, -86.806951], [33.376723, -86.806797], [33.376764, -86.806692], [33.376835, -86.806565], [33.376857, -86.806533], [33.376885, -86.806491], [33.377004, -86.806364], [33.377029, -86.806347], [33.37711, -86.806289], [33.37718, -86.80625], [33.377298, -86.806185], [33.377333, -86.806168], [33.377388, -86.806142], [33.377483, -86.806096], [33.377578, -86.806051], [33.377638, -86.806025], [33.377805, -86.805952], [33.377836, -86.805942], [33.377889, -86.805925], [33.377969, -86.805914], [33.378067, -86.805907], [33.37814, -86.805916], [33.378222, -86.805937], [33.378338, -86.805966], [33.378429, -86.806015], [33.378453, -86.806028], [33.37858, -86.806092], [33.378805, -86.806206], [33.379019, -86.806314], [33.379178, -86.806394], [33.379466, -86.806539], [33.379955, -86.806787]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "green",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 0.8,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_95e78277e1dc1d7fbbca6072c422bf8d);
+            
+</script>
