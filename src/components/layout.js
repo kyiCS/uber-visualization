@@ -9,7 +9,7 @@ const Layout = ({ pageTitle, children }) => {
     <div>
       <div className={css.Header}>
         <div className={css.HeaderGroup}>
-          <a href="https://github.com/kyiCS/uber-vis" className={css.LogoGroup}>
+          <a href="/https://github.com/kyiCS/uber-vis" className={css.LogoGroup}>
             <img src={githubLogo} alt="" width="40px" />
             <span className={css.LogoText}>GitHub</span>
           </a>
@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children }) => {
         <div className={css.container}>
           <title>{pageTitle}</title>
           <main>
-            <h1 className={css.gradient}>{pageTitle} <br/>by Kelvin Yi</h1>
+            <h1 className={css.gradient}>{pageTitle} <br/>By Kelvin Yi</h1>
             {children}
 
           </main>
