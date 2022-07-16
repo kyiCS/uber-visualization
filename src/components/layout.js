@@ -21,6 +21,7 @@ const Layout = ({ pageTitle, children }) => {
           <main>
             <h1 className={css.gradient}>{pageTitle} <br/>by Kelvin Yi</h1>
             {children}
+
           </main>
         </div>
       </body>
