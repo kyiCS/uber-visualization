@@ -17,9 +17,21 @@ const Layout = ({ pageTitle, children }) => {
       </div>
       <body>
         <div className={css.container}>
+          <div class={css.titleSlide}>
+            
           <title>{pageTitle}</title>
+
+          <h1 className={css.gradient}>{pageTitle} <br />By Kelvin Yi</h1>
+          
+          <p>
+            The Uber Visualization Project is a data Visualization project meant to better visualize Uber activity in the Greater Birmingham Area.
+          </p>
+
+          </div>
+
+
           <main>
-            <h1 className={css.gradient}>{pageTitle} <br/>By Kelvin Yi</h1>
+
             {children}
 
           </main>
