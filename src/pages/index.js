@@ -32,11 +32,21 @@ const IndexPage = () => {
         To a heatmap representation:
         <br/><br/>
         <img src={exampleheatmap} alt="exampleheatmap" />
-
-
-
-
       </p>
+      <h2>Our Toolset</h2>
+      <h4>Python</h4>
+      <p>
+        Python has some great data visualization tools that we can utilize in this project.
+      </p>
+      <h4>Folium</h4>
+      <p>
+        Folium 
+      </p>
+      <h4>Fast Map Matching</h4>
+      <p></p>
+      <h4>OSMnx</h4>
+      <p></p>
+
 
       <img class={css.maps} src={cumulative_heatmap} alt="Cumulative Heatmap"/>
     </Layout>
