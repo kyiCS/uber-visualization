@@ -3,11 +3,8 @@ import * as css from '../components/layout.module.css'
 import Layout from '../components/layout'
 
 import cumulative_heatmap from '../images/cumulative_heatmap.png'
-import exampleubertrip from '../images/exampletrip.png'
-import exampleheatmap from '../images/exampleheatmap.png'
-
-
-
+import exampleubertripgif from '../images/tripgif.gif'
+import example_marker_map from '../images/example marker map.png'
 
 
 const IndexPage = () => {
@@ -17,7 +14,7 @@ const IndexPage = () => {
       <h2>The Challenge</h2>
       <p>
         Uber already provides their drivers with a heatmap indicating where the most active regions are in their area. 
-        We want to recreate this using Folium, Fast Map Matching, and OSMnx.
+        We want to recreate this using Folium, Fast Map Matching, and OSMnx. 
 
         <br/><br/>
 
@@ -25,30 +22,62 @@ const IndexPage = () => {
         
         <br/><br/>
 
-        So how do we get from this:
+        So how do we get from the raw Uber trip image:
         <br/><br/>
-        <img src={exampleubertrip} alt="exampleubertrip" />
+        <img src={exampleubertripgif} alt="exampleubertripgif"/>
         <br/>
-        To a heatmap representation:
+        To the complete heatmap of Uber activity:
         <br/><br/>
-        <img src={exampleheatmap} alt="exampleheatmap" />
+        <img class={css.maps} src={cumulative_heatmap} alt="Cumulative Heatmap"/>
+        <br/>
       </p>
       <h2>Our Toolset</h2>
       <h4>Python</h4>
       <p>
         Python has some great data visualization tools that we can utilize in this project.
       </p>
-      <h4>Folium</h4>
+      <a href='https://python-visualization.github.io/folium/index.html'><h4>Folium</h4></a>
       <p>
-        Folium 
+        Folium is a libary that combines the power of Python's data wrangling and leaflet.js to create great interactive maps.
       </p>
-      <h4>Fast Map Matching</h4>
-      <p></p>
-      <h4>OSMnx</h4>
-      <p></p>
+      <a href='https://github.com/cyang-kth/fmm'><h4>Fast Map Matching</h4></a>
+      <p>
+        FMM or Fast Map Matching is a road network matching tool built for Jupyter Notebook. With FMM, we are able to convert our noisy GPS coordinate data into real road paths. 
+      </p>
+      <h4>Other Tools</h4>
+      <p>
+        There are some other tools that were used for data manipulation and conversion such as PyProj and OSMnx.
+      </p>
+      <br/>
+      <h2>Our Dataset</h2>
+      <p>
+        First, we need to find a way to translate the raw map into data for our Folium maps. 
+        To do this, we need to manually locate some coordinates that generally describes the Uber trip path. In this case, we locate each major turn to be a coordinate.
+        Using <a href='https://www.georeferencer.com/'>Georeferencer</a>, 
+        we can overlay the Uber trip images on a real map to find its exact coordinates.
+        <br/><br/>
+        All the data for the coordinates can be found on <a href="https://github.com/gowtham30/geospatial_data_science_mini/blob/main/trajectories_epsg_3857.txt">here</a>.
+        
+      </p>
+
+      <h2></h2>
+
+        <br/><br/>
+        There are some formatting issues with different EPSG coordinate systems, but after transforming our data, we can now map it into Folium.
+        <br/><br/>
+
+        <img src={example_marker_map}/>
+        <br/><br/>
+
+        Here's an example of a Folium map populated with our coordinates. Each marker is a coordinate that we got from Georeferencer. As you can see, it is not an accurate road path.
+        
+        <br/>
 
 
-      <img class={css.maps} src={cumulative_heatmap} alt="Cumulative Heatmap"/>
+
+
+
+
     </Layout>
   )
 }
