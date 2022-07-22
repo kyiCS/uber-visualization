@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as css from './layout.module.css'
-import githubLogo from '../images/github.png'
+import githubLogo from '/src/images/github.png'
 
 
 const Layout = ({ pageTitle, children }) => {
