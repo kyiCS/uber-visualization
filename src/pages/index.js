@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as css from '/src/components/layout.module.css'
 import Layout from '/src/components/layout'
 
-import cumulative_heatmap from '/src/images/cumulative_heatmap.png'
+import cumulative_heatmap from '/src/images/cumulative heatmap.png'
 import exampleubertripgif from '/src/images/tripgif.gif'
 import exampleheatmapgif from '/src/images/heatmapgif.gif'
 import example_marker_map from '/src/images/example marker map.png'
