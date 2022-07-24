@@ -86,7 +86,15 @@ const IndexPage = () => {
 
         <img src={exampleheatmapgif} className={css.maps} />
 
+        And add all these points into a single Folium map to create our final cumulative heatmap.
+
+        <img class={css.maps} src={cumulative_heatmap} className={css.maps} alt="Cumulative Heatmap" />
+
+        And we are done! Check out the code on <a href="https://github.com/kyiCS/uber-vis">GitHub</a>. It includes HTML files for all the generated maps for the 57 Uber trips we used in this project. It also includes a Jupyter Notebook with the code for each step in this article. 
+        More maps can be generated from Gowtham30's <a href="https://github.com/gowtham30/geospatial_data_science_mini/blob/main/trajectories_epsg_3857.txt">data</a> so check it our yourself!
       </p>
+
+    
 
 
 
